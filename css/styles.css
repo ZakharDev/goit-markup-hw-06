@@ -465,12 +465,14 @@ body {
   margin-left: 30px;
   width: 170px;
   height: 92px;
+  border-radius: 4px;
   transition-property: color;
   transition-duration: var(--duration);
   transition-timing-function: var(--function);
 }
 .clients-item:first-child {
   margin-left: 0;
+  
 }
 .clients-link {
   border-radius: 4px;
@@ -809,4 +811,28 @@ body {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+.modal{
+  padding: 40px;
+}
+.modal-title{
+  color: var(--title-text-color);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+.modal-text{
+  color: var(--primeri-text-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+}
+.modal-input{
+  width: 100%;
+  height: 40px;
 }
