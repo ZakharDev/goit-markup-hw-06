@@ -387,16 +387,68 @@
                 </svg>  
             </button>
             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-            <p class="modal-text">Имя</p>
             <form action="#" class="modal-form">
-                <input type="text" class="modal-input">
-                <p class="modal-text">Телефон</p>
-                <input type="text" class="modal-input">
-                <p class="modal-text">Почта</p>
-                <input type="text" class="modal-input">
-                <p class="modal-text ">Комментарий</p>
-                <input type="text" class="modal-input comments">
+            <div class="modal-box">
+                <div class="modal-form-box">
+                    <label for="user-name" class="modal-label">Имя</label>
+                    <input 
+                        type="text" 
+                        name="user-name" 
+                        class="modal-input"
+                        id="user-name"
+                    >
+                    
+                </div>
+                <div class="modal-form-box">
+                <label for="user-tel" class="modal-label">Телефон</label>
+                <input 
+                        type="tel" 
+                        name="user-tel" 
+                        class="modal-input"
+                    id="user-tel"
+                    >
+                </div>
+                <div class="modal-form-box">
+                <label for="user-email" class="modal-label">Почта</label>
+                <input 
+                        type="email" 
+                        name="user-email" 
+                        class="modal-input"
+                        id="user-email"
+                    >
+                </div>
+                <div class="modal-form-box">
+                <label for="user-comment" class="modal-label">Комментарий</label>
+                <textarea 
+                    name="user-comment" 
+                    id="user-comment" 
+                    class="modal-area-comment" 
+                    placeholder="Введите текст"
+                    ></textarea>
+                <!-- <input 
+                        type="text" 
+                        name="user-comment" 
+                        class="modal-input comments"
+                        title="Введите текст"
+                        placeholder="Введите текст"
+                        id="user-comment"
+                    > -->
+                    </div>
+                        <div class="modal-form-checkbox">
+                            <input type="checkbox" name="user-policy" id="user-policy" class="modal-input-policy visually-hidden">
+                            <label for="user-policy" class="modal-policy-text"><span class="border-checkbox">
+                                    <svg class="icon-check" width="16" height="15">
+                                        <use href=""></use>
+                                    </svg>
+                                </span>
+                                Соглашаюсь с рассылкой и принимаю
+                                <a href="#" class="modal-policy-link">Условия договора</a>
+                            </label>
+                        </div>
+                <button type="submit">Отправить</button> 
+            </div>
             </form>
+            
         </div>
     </div>
 <!-- <script src="./js/modal.js"></script> -->

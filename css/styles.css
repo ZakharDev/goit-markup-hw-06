@@ -824,14 +824,15 @@ body {
   letter-spacing: 0.03em;
   margin-bottom: 12px;
 }
-.modal-text{
-  color: var(--primeri-text-color);
+/* .modal-text{
+color: var(--primeri-text-color);
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   margin-bottom: 4px;
-}
+
+} */
 .modal-input{
   width: 100%;
   height: 40px;
@@ -839,7 +840,45 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  background-color: transparent;
 }
 .comments{
   height: 120px;
+} 
+
+.modal-input::placeholder{
+  color: rgba(117, 117, 117, 0.5);
+  font-weight: 400;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
 }
+.modal-label{
+  color: var(--primeri-text-color);
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  padding-bottom: 4px;
+}
+
+.modal-area-comment{
+  padding: 12px 16px;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px; 
+  outline: none;
+  resize: none;
+}
+.modal-area-comment::placeholder{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+  }
+
