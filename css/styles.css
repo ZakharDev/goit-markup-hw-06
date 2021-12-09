@@ -13,6 +13,13 @@
   --overlay-card-color: rgba(33, 150, 243, 0.9);
   --duration: 250ms;
   --function: cubic-bezier(0.4, 0, 0.2, 1);
+  --modal-title-color: #212121;
+  --modal-icon-input-color: #212121;
+  --modal-text-color: #757575;
+  --modal-comment-placeholder: rgba(117, 117, 117, 0.5);
+  --modal-policy-link: #2196f3;
+  --modal-button-submit-color: #ffffff;
+  --modal-checkbox-border-color: #212121;
 }
 .visually-hidden {
   position: absolute;
@@ -680,7 +687,10 @@ color: var(--white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-
+.sugn-up-form {
+  display: flex;
+  width: 358px;
+}
 
 
 
@@ -1040,6 +1050,24 @@ letter-spacing: 0.01em;
   text-decoration-skip-ink: none;
   margin-left: 3px;
 }
+.modal-button-submit {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 50px;
 
+  
+  background-color: var(--accent-colot);
+  color: var(--modal-button-submit-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
 
-
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
