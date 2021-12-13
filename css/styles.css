@@ -953,34 +953,67 @@ color: var(--primeri-text-color);
   margin-bottom: 4px;
 
 } */
-.modal-input{
+.modal-box {
+  margin: 0;
+  padding: 0;
+}
+.modal-box :nth-child(4){
+  margin-bottom: 20px;
+}
+.modal-form-box {
+  /* display: block; */
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.modal-input {
+  padding-left: 42px;
   width: 100%;
   height: 40px;
-  margin-bottom: 10px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
+
   border-radius: 4px;
-  background-color: transparent;
-}
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: none;
 
-.modal-input:focus + .modal-icon-svg {
-  fill: var(--accent-colot);
+  transition: border-color 250ms var(--function);
 }
-.comments{
+.modal-label {
+  display: block;
+  padding-bottom: 4px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: var(--modal-text-color);
+}
+.modal-area-comment {
+  padding: 12px 16px;
+  width: 100%;
   height: 120px;
-} 
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 
-.modal-input::placeholder{
-  color: rgba(117, 117, 117, 0.5);
-  font-weight: 400;
-font-size: 12px;
-line-height: 1.16;
-letter-spacing: 0.01em;
+  resize: none;
+  outline: none;
+  transition: border-color 250ms var(--function);
 }
+.modal-area-comment:focus {
+  border-color: var(--accent-colot);
+}
+
 .box-icon-input {
   position: relative;
   width: 100%;
+
   color: var(--modal-icon-input-color);
+}
+
+.modal-input:focus {
+  border-color: var(--accent-color);
+}
+.modal-input:focus + .modal-icon-svg {
+  fill: var(--accent-colot);
 }
 
 .modal-icon-svg {
@@ -993,39 +1026,11 @@ letter-spacing: 0.01em;
   fill: currentColor;
   transition: fill 250ms var(--function);
 }
-.modal-label{
-  color: var(--primeri-text-color);
-  display: block;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  padding-bottom: 4px;
+/**------------ Checkbox */
+.modal-form-checkbox {
+  margin-bottom: 30px;
 }
-
-.modal-area-comment{
-  padding: 12px 16px;
-  width: 100%;
-  height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px; 
-  outline: none;
-  resize: none;
-}
-.modal-area-comment::placeholder{
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-
-  color: rgba(117, 117, 117, 0.5);
-  }
-
-  .modal-area-comment:focus{
-    color: var(--accent-colot);
-  }
-  .modal-policy-text{
+.modal-policy-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1033,19 +1038,17 @@ letter-spacing: 0.01em;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  }
-
+}
 .modal-input-policy {
   cursor: pointer;
 }
-  
 .border-checkbox {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 16px;
   height: 15px;
-  border: 2px solid var(--title-text-color);
+  border: 2px solid var(--modal-checkbox-border-color);
   border-radius: 2px;
   margin-right: 8px;
 
@@ -1055,18 +1058,20 @@ letter-spacing: 0.01em;
 .icon-check {
   fill: transparent;
 }
-
 .modal-input-policy:focus + .modal-policy-text .border-checkbox,
-.modal-input-policy:hover + .modal-policy-text .border-checkbox{
-  border-color: var(--logo-color);
+.modal-input-policy:hover + .modal-policy-text .border-checkbox {
+  border-color: #2196f3;
 }
 
 .modal-input-policy:checked + .modal-policy-text .border-checkbox {
   background-color: var(--accent-colot);
   border: none;
 }
+.modal-input-policy:checked:focus + .modal-policy-text .icon-check {
+  fill: var(--white-color);
+}
 .modal-policy-link {
-  color: var(--logo-color);
+  color: var(--modal-policy-link);
   text-decoration: underline;
   font-size: 14px;
   line-height: 1.71;
@@ -1082,7 +1087,6 @@ letter-spacing: 0.01em;
   width: 200px;
   height: 50px;
 
-  
   background-color: var(--accent-colot);
   color: var(--modal-button-submit-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1094,4 +1098,28 @@ letter-spacing: 0.01em;
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
+}
+.close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  transition: color 250ms var(--function);
+}
+.close:hover,
+.close:focus {
+  color: var(--accent-colot);
+}
+.icon-button {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
 }
