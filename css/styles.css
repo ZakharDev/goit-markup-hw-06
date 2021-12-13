@@ -976,7 +976,6 @@ letter-spacing: 0.01em;
 .box-icon-input {
   position: relative;
   width: 100%;
-
   color: var(--modal-icon-input-color);
 }
 
