@@ -973,6 +973,17 @@ font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
 }
+
+.modal-icon-svg {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  width: 13px;
+  height: 13px;
+  fill: currentColor;
+  transition: fill 250ms var(--function);
+}
 .modal-label{
   color: var(--primeri-text-color);
   display: block;
@@ -1000,6 +1011,10 @@ letter-spacing: 0.01em;
   letter-spacing: 0.01em;
 
   color: rgba(117, 117, 117, 0.5);
+  }
+
+  .modal-area-comment:focus{
+    color: var(--accent-colot);
   }
   .modal-policy-text{
   display: flex;
