@@ -973,6 +973,12 @@ font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
 }
+.box-icon-input {
+  position: relative;
+  width: 100%;
+
+  color: var(--modal-icon-input-color);
+}
 
 .modal-icon-svg {
   position: absolute;
