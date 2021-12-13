@@ -962,6 +962,10 @@ color: var(--primeri-text-color);
   border-radius: 4px;
   background-color: transparent;
 }
+
+.modal-input:focus + .modal-icon-svg {
+  fill: var(--accent-colot);
+}
 .comments{
   height: 120px;
 } 
