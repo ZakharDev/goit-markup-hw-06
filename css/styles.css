@@ -925,7 +925,7 @@ transition: opacity 250ms var(--function), visibility 250ms var(--function);}
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   border-radius: 50%;
-
+  cursor: pointer;
 }
 .is-hidden{
   visibility: hidden;
