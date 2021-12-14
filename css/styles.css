@@ -998,6 +998,13 @@ color: var(--primeri-text-color);
   outline: none;
   transition: border-color 250ms var(--function);
 }
+.modal-area-comment::placeholder{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
 .modal-area-comment:focus {
   border-color: var(--accent-colot);
 }
