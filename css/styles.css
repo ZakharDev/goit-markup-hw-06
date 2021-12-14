@@ -1017,7 +1017,7 @@ color: var(--primeri-text-color);
 }
 
 .modal-input:focus {
-  border-color: var(--accent-color);
+  border-color: var(--accent-colot);
 }
 .modal-input:focus + .modal-icon-svg {
   fill: var(--accent-colot);
