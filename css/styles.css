@@ -926,6 +926,11 @@ transition: opacity 250ms var(--function), visibility 250ms var(--function);}
   box-sizing: border-box;
   border-radius: 50%;
   cursor: pointer;
+  transition: border-color 250ms var(--function);
+}
+.modal-close:focus,
+.modal-close:hover {
+  border-color: var(--accent-colot);
 }
 .is-hidden{
   visibility: hidden;
