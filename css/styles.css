@@ -930,7 +930,8 @@ transition: opacity 250ms var(--function), visibility 250ms var(--function);}
 }
 .modal-close:focus,
 .modal-close:hover {
-  border-color: var(--accent-colot);
+  color: var(--accent-colot);
+
 }
 .is-hidden{
   visibility: hidden;
