@@ -944,12 +944,12 @@ transition-property: box-shadow;
 
 .icon-close {
   position: absolute;
+  color: var(--accent-colot);
 }
 
 .modal-close:hover,
 .modal-close:focus {
   fill: currentColor;
-  border: 1px solid var(--accent-colot);
 }
 
 .modal-title {
