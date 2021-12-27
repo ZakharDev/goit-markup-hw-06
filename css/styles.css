@@ -1124,7 +1124,7 @@ transition-property: box-shadow;
   border-color: #2196f3;
 }
 
-.modal-input-policy:checked + .modal-policy-text .border-checkbox {
+.modal-input-policy:checked + .modal-policy-text span .border-checkbox {
   background-color: var(--accent-colot);
   border: none;
 }
