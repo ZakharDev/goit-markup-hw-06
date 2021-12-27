@@ -1022,7 +1022,6 @@ transition-property: box-shadow;
   border: 1px solid var(--accent-colot);
 }
 
-.modal-input:hover + .form-icon,
 .modal-input:focus + .form-icon {
   fill: var(--accent-colot);
 }
@@ -1062,9 +1061,6 @@ transition-property: box-shadow;
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
-  width: 13px;
-  height: 13px;
-  fill: currentColor;
   transition: fill 250ms var(--function);
 }
 .form-textarea {
@@ -1133,7 +1129,7 @@ transition-property: box-shadow;
   border: none;
 }
 .modal-input-policy:checked:focus + .modal-policy-text .icon-check {
-  fill: var(--primeri-text-color);
+  fill: var(--white-color);
 }
 .modal-policy-link {
   color: var(--modal-policy-link);
