@@ -439,18 +439,17 @@
 							id="textarea"
 						></textarea>
 					</label>
-                    <div class="policy-container">
-                        <label class="policy-label">
-                            <input class="policy-checkbox visually-hidden" type="checkbox" name="policy" value="accept" />
-                            <svg class="policy-checkbox-new" width="16" height="15">
-                                <use href="./images/icons.svg#icon-check"></use>
-                            </svg>
-                            <span>
+                        <div class="modal-form-checkbox">
+                            <input type="checkbox" name="user-policy" id="user-policy" class="modal-input-policy visually-hidden">
+                            <label for="user-policy" class="modal-policy-text"><span class="border-checkbox">
+                                    <svg class="icon-check" width="16" height="15">
+                                        <use href="./images/icons.svg#icon-check"></use>
+                                    </svg>
+                                </span>
                                 Соглашаюсь с рассылкой и принимаю
-                                <a class="policy-link" href="">Условия договора</a>
-                            </span>
-                        </label>
-                    </div>
+                                <a href="#" class="modal-policy-link">Условия договора</a>
+                            </label>
+                        </div>
                 <button type="submit" class="primary-button">Отправить</button>
             </form>
         </div>
