@@ -433,18 +433,18 @@
                     <textarea name="comment" id="comment" rows="8" class="form-textarea"
                         placeholder="Введите текст"></textarea>
                 </div>
-                <div class="checkbox-field">
-                    <label for="modal-checkbox" class="modal-checkbox-text">
-                        <input type="checkbox" name="modal-checkbox" class="modal-checkbox" id="modal-checkbox" />
+                    <div class="policy-container">
+                        <label class="policy-label">
+                            <input class="policy-checkbox visually-hidden" type="checkbox" name="policy" value="accept" />
                             <svg class="policy-checkbox-new" width="16" height="15">
                                 <use href="./images/icons.svg#icon-check"></use>
                             </svg>
-                        <span >
-                            Соглашаюсь с рассылкой и принимаю
-                            <a class="agreement" href=""> Условия договора</a>
-                        </span>
-                    </label>
-                </div>
+                            <span>
+                                Соглашаюсь с рассылкой и принимаю
+                                <a class="policy-link" href="">Условия договора</a>
+                            </span>
+                        </label>
+                    </div>
                 <button type="submit" class="primary-button">Отправить</button>
             </form>
         </div>
